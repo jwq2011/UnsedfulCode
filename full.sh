@@ -11,59 +11,8 @@ MAKETOOL="${TOP}/RKTools/linux/Linux_Upgrade_Tool_v1.16/rockdev"
 
 #/两个数组里面，服务器对应的目录和项目要对应/
 
-localname="huabao_pnd \
-		huabao \
-		kewei  \
-		suoling \
-		suoling_h1c9 \
-		penghui \
-		qiwen_bmw520 \
-		feiyin	\
-		yl_es250 \
-		yl_bmw520 \
-		yl_nx300 \
-		ylzj \
-		ylzj_furuisi \
-		youyang \
-		hangsheng \
-		suoling_es250 \
-		zhuoyi_bmw520 \
-		yinzhiyuan \
-		beijian \
-		shenghualelv \
-		suoling_jinyu \
-		suoling_iw \
-		suoling_google \
-		jili_hj_xm \
-		hexin_bmw520 \
-	  " 
-
-appservername="35.华宝/K1101A002HBSYC \
-		35.华宝/K1101A002HBSYC_shuangding \
-		42.科维-K1102A008KWTY/K1102A008KWTY \
-		37.索菱/K1102A002SLTG  \
-		37.索菱/K1102A002SLTG_H1C9 \
-		36.朋辉/K1101A004PHTY  \
-		45.启文_K1102A017QWBM5_1024x480_APP \
-		44.飞音   \
-		46.莹隆/LEXUS  \
-		46.莹隆/BMW  \
-		46.莹隆/NX300  \
-		48.滢隆-K1102A019YLTY/K1102A019YLTY   \
-		59.滢隆-K1102A019YLTY_InLand/K1102A019YLTY   \
-		43优扬 \
-		38.航盛K1101A001HSTY \
-		37.索菱/K1102A023_SL_ES250 \
-		51.卓翼K1102Y030_ZY_BM5 \
-		50.音之源 \
-		44.飞音   \
-		52.盛华乐旅 \
-		37.索菱/K1102A002SLTG \
-		37.索菱/K1102A002SLTG \
-		37.索菱/K1102A002SLTG \
-		54熊猫 \
-		56.合鑫/K1102Y037_HX_BM5 \
-           " 
+localname="huabao_pnd" 
+appservername="35.华宝/K1101A002HBSYC" 
 
 LOCAL_SRC_APP_DIR=($localname)
 
