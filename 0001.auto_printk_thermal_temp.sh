@@ -12,8 +12,9 @@ while [ $count ]; do
 #		count=1
 #		echo $print_temp
 #	fi
-	sleep 60
+
 	echo "$(date):thermal_zone=$(cat /sys/devices/virtual/thermal/thermal_zone0/temp)"
 #	count=$((count+1))
 #	echo $count
+	sleep 60
 done
