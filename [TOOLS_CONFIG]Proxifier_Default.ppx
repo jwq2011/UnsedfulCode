@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxifierProfile version="101" platform="Windows" product_id="0" product_minver="310">
+  <Options>
+    <Resolve>
+      <AutoModeDetection enabled="true" />
+      <ViaProxy enabled="true">
+        <TryLocalDnsFirst enabled="false" />
+      </ViaProxy>
+      <ExclusionList>%ComputerName%; localhost; *.local</ExclusionList>
+    </Resolve>
+    <Encryption mode="master">
+      <Hash>AAICVcUG6FTRKgjjmnM6QatY7bEAI1FNKEmEum7j2n58rTU=</Hash>
+    </Encryption>
+    <HttpProxiesSupport enabled="false" />
+    <HandleDirectConnections enabled="false" />
+    <ConnectionLoopDetection enabled="true" />
+    <ProcessServices enabled="false" />
+    <ProcessOtherUsers enabled="false" />
+  </Options>
+  <ProxyList>
+    <Proxy id="101" type="SOCKS5">
+      <Address>192.168.2.9</Address>
+      <Port>8888</Port>
+      <Options>48</Options>
+    </Proxy>
+  </ProxyList>
+  <ChainList />
+  <RuleList>
+    <Rule enabled="true">
+      <Name>Localhost</Name>
+      <Targets>localhost; 127.0.0.1; %ComputerName%</Targets>
+      <Action type="Proxy">101</Action>
+    </Rule>
+    <Rule enabled="true">
+      <Name>Secoclient</Name>
+      <Applications>SecoClientPromoteService.exe;SecoClientCS.exe;SecoClient.exe;RTX.exe;Foxmail.exe</Applications>
+      <Action type="Direct" />
+    </Rule>
+    <Rule enabled="true">
+      <Name>Chrome访问RR</Name>
+      <Applications>Maxthon.exe;chrome.exe;firefox.exe;360se.exe;git.exe;mintty.exe;ssh.exe;git-remote-http.exe;</Applications>
+      <Targets>192.168.10.*;192.168.2.*</Targets>
+      <Action type="Direct" />
+    </Rule>
+    <Rule enabled="true">
+      <Name>Default</Name>
+      <Action type="Proxy">101</Action>
+    </Rule>
+  </RuleList>
+</ProxifierProfile>
